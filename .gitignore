@@ -106,3 +106,8 @@ venv.bak/
 # PyCharm
 .idea/
 
+# Airflow transients
+airflow.db
+airflow-webserver.pid
+logs/
+

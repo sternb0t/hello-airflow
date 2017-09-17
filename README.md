@@ -19,3 +19,22 @@ $ source bin/activate
 (hello-airflow)$ git add .
 (hello-airflow)$ git commit -m "initial commit"
 ```
+
+## Quick Start
+
+From https://airflow.incubator.apache.org/start.html, but setting `AIRFLOW_HOME` to the `airflow` subfolder:
+
+```bash
+(hello-airflow)$ mkdir airflow
+(hello-airflow)$ export AIRFLOW_HOME=~/Code/hello-airflow/hello-airflow/
+(hello-airflow)$ airflow initdb
+(hello-airflow)$ airflow webserver -p 8080
+```
+
+## Tutorial DAG
+
+Bring in the tutorial DAG:
+
+```bash
+(hello-airflow)$ wget https://raw.githubusercontent.com/apache/incubator-airflow/master/airflow/example_dags/tutorial.py -O dags/tutorial.py
+```
