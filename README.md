@@ -14,6 +14,8 @@ $ source bin/activate
 (hello-airflow)$ mkdir hello-airflow
 (hello-airflow)$ cd hello-airflow
 (hello-airflow)$ pip freeze > requirements.txt
+(hello-airflow)$ echo "# hello airflow" >> README.md
 (hello-airflow)$ git init
 (hello-airflow)$ git add .
+(hello-airflow)$ git commit -m "initial commit"
 ```
